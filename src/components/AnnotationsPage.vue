@@ -353,7 +353,7 @@ export default {
     firebase.firestore().collection("annotations").onSnapshot((querySnapshot) => {
       this.avoid = [];
       querySnapshot.forEach((doc) => {
-        this.avoid.push(doc.data().filename.substring(15,21));
+        this.avoid.push(doc.data().filename.substring(9,15));
       });
     });
     const docName = `${this.json.prolificID}_${this.json.studyID}_${JSClock()}`;
