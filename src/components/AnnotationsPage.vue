@@ -366,6 +366,9 @@ export default {
       db.collection("enters").doc(docName).set(data)
     }
  },
+  mounted() {
+    this.$ga.page('/AnnotationsPage');
+  },
   computed: {
     valid_json: function() {
       var json = JSON.stringify(this.json).replace(/[\u007F-\uFFFF]/g, function(

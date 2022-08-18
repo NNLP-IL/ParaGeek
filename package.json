@@ -19,6 +19,7 @@
     "uuid": "^3.3.3",
     "v-download": "^1.2.0",
     "vue": "^2.6.10",
+    "vue-analytics": "^5.22.1",
     "vue-axios": "^3.4.1",
     "vue-bootstrap-typeahead": "^0.2.6",
     "vue-hotjar": "^1.4.0",

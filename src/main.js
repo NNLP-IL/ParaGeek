@@ -13,6 +13,13 @@ import VueAxios from 'vue-axios'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueSimpleAlert from "vue-simple-alert";
+import VueAnalytics from 'vue-analytics';
+
+
+// Configuration VueAnalytics
+Vue.use(VueAnalytics, {
+    id: 'G-9MPG1KBJ03'
+  })
 
 Vue.use(ajax);
 Vue.use(BootstrapVue);
