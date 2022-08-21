@@ -10,7 +10,7 @@ import Vue from 'vue'
 import Hotjar from 'vue-hotjar'
 
 Vue.use (Hotjar, {
-  id: '2963075',
+  id: '3117199',
 })
 
 export default {
