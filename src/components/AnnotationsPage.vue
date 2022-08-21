@@ -283,10 +283,25 @@ export default {
     saveJSON: async function (type) {
       if(type == "end")
       {
-        if(confirm("Are you sure you want to finish tagging?")){
-          this.toEnd = true;
-          this.endStamp();
-        }
+        // if(confirm("Are you sure you want to finish tagging")){
+        this.$confirm(
+        {
+          message: 'Are you sure you want to finish tagging?',
+          button: {
+            no: 'לא',
+            yes: 'כן'
+          },
+          /**
+          * Callback Function
+          * @param {Boolean} confirm
+          */
+          callback: confirm => {
+            if (confirm) {
+              this.toEnd = true;
+              this.endStamp();
+            }
+          }
+        })  
       }
       if(this.json.data[this.data_number - 1].paragraphs[this.context_number - 1].qas.length == 0) return;//if page is empty do not save
       var json1 = JSON.stringify(this.json).replace(/[\u007F-\uFFFF]/g, function(

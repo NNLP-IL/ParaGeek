@@ -14,7 +14,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueSimpleAlert from "vue-simple-alert";
 import VueAnalytics from 'vue-analytics';
+import VueConfirmDialog from 'vue-confirm-dialog'
 
+Vue.use(VueConfirmDialog)
+Vue.component('vue-confirm-dialog', VueConfirmDialog.default)
 
 // Configuration VueAnalytics
 Vue.use(VueAnalytics, {

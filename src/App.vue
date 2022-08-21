@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <HomePage/>
+    <vue-confirm-dialog></vue-confirm-dialog>
   </div>
 </template>
 
@@ -8,6 +9,7 @@
 import HomePage from './components/HomePage.vue'
 import Vue from 'vue'
 import Hotjar from 'vue-hotjar'
+
 
 Vue.use (Hotjar, {
   id: '3117199',

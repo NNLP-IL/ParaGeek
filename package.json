@@ -22,6 +22,7 @@
     "vue-analytics": "^5.22.1",
     "vue-axios": "^3.4.1",
     "vue-bootstrap-typeahead": "^0.2.6",
+    "vue-confirm-dialog": "^1.0.2",
     "vue-hotjar": "^1.4.0",
     "vue-json-viewer": "^2.1.6",
     "vue-simple-alert": "^1.1.1",
