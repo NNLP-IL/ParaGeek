@@ -286,7 +286,7 @@ export default {
         // if(confirm("Are you sure you want to finish tagging")){
         this.$confirm(
         {
-          message: 'האם את/ה בטוח/ה שתרצה/י לסיים את התיוג',
+          message: "?האם סיימת את המשימה",
           button: {
             no: 'לא',
             yes: 'כן'
