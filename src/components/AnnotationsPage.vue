@@ -333,7 +333,7 @@ export default {
 
       const paddedID = this.checkFile(dataService.pad(this.jsonID, 6));
       this.json = require(`../json_resources/geekPost_${paddedID}.json`);
-      this.json.jsonID = this.jsonID;
+      this.json.jsonID = parseInt(paddedID, 10);
       this.json.prolificID = pro;
       this.json.studyID = studID;
       this.data_number = 1;

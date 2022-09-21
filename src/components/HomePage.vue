@@ -173,7 +173,7 @@ export default {
       this.jsonID = dataService.getNextId();
       const paddedID = this.checkFile(dataService.pad(this.jsonID, 6));
       this.json = require(`../json_resources/geekPost_${paddedID}.json`);
-      this.json.jsonID = this.jsonID;
+      this.json.jsonID = parseInt(paddedID, 10);
       this.json.prolificID = this.prolificID;
       this.json.studyID = this.studyID;
       this.fileUploaded = true;
